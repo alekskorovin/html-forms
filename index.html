@@ -64,10 +64,60 @@
                 Атрибут <b>method</b> говорит форме, как должны отправляться данные:
             </p>
             <ul>
-                <li>методом <b>get</b> (установлен по умолчанию) &mdash; в этом случае отправка данных видна в поле URL (там где вы видите адрес страницы сайта)</li>
+                <li>методом <b>get</b> (установлен по умолчанию) &mdash; в этом случае отправка данных видна в поле URL (там где вы видите адрес страницы сайта). Обычно метод <b>GET</b> используется для получения (get) данных.</li>
                 <li>методом <b>post</b> &mdash; в этом случае отправка данных не видна пользователю (данные можно увидеть только используя панель для разработчика)</li>
             </ul>
+            <p>
+                Метод <b>get</b> служит для отправки небольшого количества данных, которые не особо важны, т.к. их можно увидеть в адресной строке. Вы можете увидеть информацию отправляемую с помощью формы веб-сайта на странице результата поиска.
+            </p>
+            <p>
+                Метод <b>post</b> используется для отправки приватных данных, например в случае контакных форм, где отправляется почтовый адрес либо телефон пользователя.
+            </p>
+            <h4>Использование</h4>
+            <p>
+                В HTML-коде, форма выглядит следующим образом:
+            </p>
+<pre><code class="html">&lt;form action="serverscript.php" method="post"&gt;
 
+&lt;/form&gt;
+</code></pre>
+            <h3>атрибут name</h3>
+            <p>
+                Чтобы отличить данные относящиеся к тому или иному полю, существует атрибут <b>name</b> добавляемый к каждому элементу формы с заполненной информацией. Этот атрибут содержит имя поля, под этим именем информация поступает на сервер.
+            </p>
+            <p data-height="101" data-theme-id="0" data-slug-hash="VKqPKO" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/VKqPKO/">html form input name</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>input</h3>
+            <p>
+                Тег <b>input</b> это король всех форм. Существует целый список типов элементов форм обозначаемых тегом <b>input</b>. Наиболее распространенные варианты использования тега:
+            </p>
+            <ul>
+                <li><code class="html">&lt;input <b>type="text"</b> /&gt;</code> или просто <code class="html">&lt;input&gt;</code> &mdash; это стандартное текстовое поле.
+                    <br/> Если он используется в роли текстового поля, он должен содержать атрибут <b>value</b>, значением которого может быть начальное значение для текста.
+                    <p data-height="127" data-theme-id="0" data-slug-hash="gwkbWX" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/gwkbWX/">html form input type text</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <p data-height="121" data-theme-id="0" data-slug-hash="mAayrr" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/mAayrr/">html form input type text value</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <br/> В современных браузерах и Internet Explorer 10+ есть поддержка атрибута <b>placeholder</b>, значением которого является временный текст, отображающийся в текстовом поле до того момента, пока пользователь не начнет вводить текст в это поле.
+                    <p data-height="130" data-theme-id="0" data-slug-hash="amPzjN" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/amPzjN/">html form input type text placeholder</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                </li>
+                <li>
+                    <code class="html">&lt;input <b>type="password"</b> /&gt;</code> &mdash; поле для ввода пароля, сходное с обычным текстовым полем, однако в этом типе поля все буквы заменяются на звёздочки либо другие символы и скрыты от польователя. Для этого поля так же использутся атрибуты <b>value</b> и <b>placeholder</b>. Если атрибут <b>value</b> содержит какой-то текст, в браузере отображаться будут звёздочки либо другие символы заменяющие настоящие буквы.
+                    <p data-height="123" data-theme-id="0" data-slug-hash="kkzYQa" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/kkzYQa/">html form input type password placeholder</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                </li>
+                <li>
+                    <code class="html">&lt;input <b>type="checkbox"</b> /&gt;</code> &mdash; чекбокс или «галочка», это переключатель с двумя состояниями: выключен или включен.
+                    Начальное включенное состояние задаётся атрибутом <b>checked</b> со значением или без <b>checked</b>. Если переключатель включен, то с формой отправляется значение заданное в атрибуте <b>value</b>.
+                    <p data-height="339" data-theme-id="0" data-slug-hash="PGXWmk" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/PGXWmk/">html form input checkbox</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                </li>
+                <li>
+                    <code class="html">&lt;input <b>type="radio"</b> /&gt;</code> &mdash; переключатель или «радиобаттон» (радио-кнопка), сходный с чекбоксом переключатель, за исключением того, что он используется в группе переключателей и пользователь может выбрать только одну радио-кнопку из группы. Так же может содержать атрибут <b>checked</b>. Чтобы объединить в группы радио-кнопки, достаточно задать одинаковое имя для этих полей с помощью атрибута <b>name</b>
+                    <p data-height="397" data-theme-id="0" data-slug-hash="EgGkbd" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/EgGkbd/">html form input radio</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                </li>
+                <li>
+                    <code class="html">&lt;input <b>type="submit"</b> /&gt;</code> &mdash; это кнопка которая по нажатию на неё отправляет форму, в этом типе поля атрибут <b>value</b> содержит в себе текст отображающийся внутри кнопки, атрибут <b>name</b> здесь не нужен. Так же для отправки формы можно использовать кнопку обозначенную тегом <b>&lt;button&gt;</b> &mdash; <code class="html">&lt;button&gt;Кнопка для отправки формы&lt;/button&gt;</code>.
+                    <p data-height="474" data-theme-id="0" data-slug-hash="KgbaBk" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/KgbaBk/">html form input submit, button for submit</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                </li>
+
+                
+            </ul>
         </section>
 
         <aside id="sidebar">
