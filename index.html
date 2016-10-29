@@ -85,7 +85,8 @@
             <p>
                 Чтобы отличить данные относящиеся к тому или иному полю, существует атрибут <b>name</b> добавляемый к каждому элементу формы с заполненной информацией. Этот атрибут содержит имя поля, под этим именем информация поступает на сервер.
             </p>
-            <p data-height="101" data-theme-id="0" data-slug-hash="VKqPKO" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/VKqPKO/">html form input name</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p data-height="116" data-theme-id="0" data-slug-hash="VKqPKO" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="html form input name" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/VKqPKO/">html form input name</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
             <h3>input</h3>
             <p>
                 Тег <b>input</b> это король всех форм. Существует целый список типов элементов форм обозначаемых тегом <b>input</b>. Наиболее распространенные варианты использования тега:
@@ -93,31 +94,108 @@
             <ul>
                 <li><code class="html">&lt;input <b>type="text"</b> /&gt;</code> или просто <code class="html">&lt;input&gt;</code> &mdash; это стандартное текстовое поле.
                     <br/> Если он используется в роли текстового поля, он должен содержать атрибут <b>value</b>, значением которого может быть начальное значение для текста.
-                    <p data-height="127" data-theme-id="0" data-slug-hash="gwkbWX" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/gwkbWX/">html form input type text</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-                    <p data-height="121" data-theme-id="0" data-slug-hash="mAayrr" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/mAayrr/">html form input type text value</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-                    <br/> В современных браузерах и Internet Explorer 10+ есть поддержка атрибута <b>placeholder</b>, значением которого является временный текст, отображающийся в текстовом поле до того момента, пока пользователь не начнет вводить текст в это поле.
-                    <p data-height="130" data-theme-id="0" data-slug-hash="amPzjN" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/amPzjN/">html form input type text placeholder</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <p data-height="127" data-theme-id="0" data-slug-hash="gwkbWX" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/gwkbWX/">html form input type text</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <p data-height="121" data-theme-id="0" data-slug-hash="mAayrr" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/mAayrr/">html form input type text value</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <br />
+                    Атрибутом <b>size</b> можно задавать ширину поля соответствующую количеству символов. В принципе рекомендуется задавать ширину в CSS а не в HTML.
+                    <p data-height="165" data-theme-id="0" data-slug-hash="amXpkY" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/amXpkY/">html form input size</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <br />
+                    Задать максимальное количество вводимых символов можно используя атрибут <b>maxlength</b>:
+                    <p data-height="140" data-theme-id="0" data-slug-hash="xErgqz" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/xErgqz/">html form input maxlength</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <br/>В современных браузерах и Internet Explorer 10+ есть поддержка атрибута <b>placeholder</b> (подсказка поля), значением которого является временный текст, отображающийся в текстовом поле до того момента, пока пользователь не начнет вводить текст в это поле.
+                    <p data-height="130" data-theme-id="0" data-slug-hash="amPzjN" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/amPzjN/">html form input type text placeholder</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <p>
+                        В современных браузерах и Internet Explorer 10+ для текстового поля можно задать атрибут <b>autofocus</b> на одном из полей формы, и сделать этот элемент активным сразу при загрузке страницы:
+                    </p>
+                    <p data-height="293" data-theme-id="0" data-slug-hash="EgALdY" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/EgALdY/">html form input type text placeholder</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                 </li>
                 <li>
-                    <code class="html">&lt;input <b>type="password"</b> /&gt;</code> &mdash; поле для ввода пароля, сходное с обычным текстовым полем, однако в этом типе поля все буквы заменяются на звёздочки либо другие символы и скрыты от польователя. Для этого поля так же использутся атрибуты <b>value</b> и <b>placeholder</b>. Если атрибут <b>value</b> содержит какой-то текст, в браузере отображаться будут звёздочки либо другие символы заменяющие настоящие буквы.
-                    <p data-height="123" data-theme-id="0" data-slug-hash="kkzYQa" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/kkzYQa/">html form input type password placeholder</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <code class="html">&lt;input <b>type="password"</b> /&gt;</code> &mdash; поле для ввода пароля, сходное с обычным текстовым полем, однако в этом типе поля все буквы заменяются на звёздочки либо другие символы и скрыты от польователя. Для этого поля так же использутся атрибуты <b>value</b>, <b>size</b>, <b>maxlength</b>, <b>placeholder</b>, <b>autofocus</b>. Если атрибут <b>value</b> содержит какой-то текст, в браузере отображаться будут звёздочки либо другие символы заменяющие настоящие буквы.
+                    <p data-height="123" data-theme-id="0" data-slug-hash="kkzYQa" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/kkzYQa/">html form input type password placeholder</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                 </li>
                 <li>
                     <code class="html">&lt;input <b>type="checkbox"</b> /&gt;</code> &mdash; чекбокс или «галочка», это переключатель с двумя состояниями: выключен или включен.
                     Начальное включенное состояние задаётся атрибутом <b>checked</b> со значением или без <b>checked</b>. Если переключатель включен, то с формой отправляется значение заданное в атрибуте <b>value</b>.
-                    <p data-height="339" data-theme-id="0" data-slug-hash="PGXWmk" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/PGXWmk/">html form input checkbox</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <p data-height="339" data-theme-id="0" data-slug-hash="PGXWmk" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/PGXWmk/">html form input checkbox</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                 </li>
                 <li>
                     <code class="html">&lt;input <b>type="radio"</b> /&gt;</code> &mdash; переключатель или «радиобаттон» (радио-кнопка), сходный с чекбоксом переключатель, за исключением того, что он используется в группе переключателей и пользователь может выбрать только одну радио-кнопку из группы. Так же может содержать атрибут <b>checked</b>. Чтобы объединить в группы радио-кнопки, достаточно задать одинаковое имя для этих полей с помощью атрибута <b>name</b>
-                    <p data-height="397" data-theme-id="0" data-slug-hash="EgGkbd" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/EgGkbd/">html form input radio</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <p data-height="397" data-theme-id="0" data-slug-hash="EgGkbd" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/EgGkbd/">html form input radio</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                 </li>
                 <li>
                     <code class="html">&lt;input <b>type="submit"</b> /&gt;</code> &mdash; это кнопка которая по нажатию на неё отправляет форму, в этом типе поля атрибут <b>value</b> содержит в себе текст отображающийся внутри кнопки, атрибут <b>name</b> здесь не нужен. Так же для отправки формы можно использовать кнопку обозначенную тегом <b>&lt;button&gt;</b> &mdash; <code class="html">&lt;button&gt;Кнопка для отправки формы&lt;/button&gt;</code>.
-                    <p data-height="474" data-theme-id="0" data-slug-hash="KgbaBk" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/KgbaBk/">html form input submit, button for submit</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                    <p data-height="474" data-theme-id="0" data-slug-hash="KgbaBk" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/KgbaBk/">html form input submit, button for submit</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                 </li>
-
-                
+                <li>
+                    <code class="html">&lt;input <b>type="hidden"</b> /&gt;</code> &mdash; это скрытое поле с заданными именем в атрибуте <b>name</b> и значением в атрибуте <b>value</b>, используется для отправки данных которые необходимы но должны быть скрыты от глаз пользователя, например уникальный идентификатор формы.
+                </li>
+                <li>
+                    <code class="html">&lt;input <b>type="file"</b> /&gt;</code> &mdash; это поле для загрузки файлов, не очень хорошо поддаётся стилизации с помощью CSS. После загрузки файла отображает имя файла.
+                    <p data-height="111" data-theme-id="0" data-slug-hash="bwPpQa" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="html form input name file" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/bwPpQa/">html form input name file</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                </li>
             </ul>
+
+            <h3>textarea</h3>
+            <p>
+                <b>textarea</b> &mdash; это многострочное поле ввода текста. Количество строк и колонок в этом поле можно задавать используя атрибуты <b>rows</b> (строки) и <b>cols</b> (колонки). Так же рекомендуется задавать размеры с помощью CSS: используя свойства <b>width</b> (ширина) и <b>height</b> (высота).
+            </p>
+            <p data-height="155" data-theme-id="0" data-slug-hash="pEGRwZ" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/pEGRwZ/">textarea cols rows</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Предпочтительнее использовать атрибут <b>rows</b> и не использовать <b>cols</b> (задавая ширину в CSS), либо все размеры проставлять в CSS.
+            </p>
+            <p data-height="244" data-theme-id="0" data-slug-hash="mAvRrN" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/mAvRrN/">textarea cols rows</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Всё что находится между открывающим и закрывающим тегами является начальным значением текстового поля.
+            </p>
+            <p>
+                Так же с IE10+ в браузерах есть поддержка атрибута <b>placeholder</b> и атрибута <b>autofocus</b> для <b>textarea</b>:
+            </p>
+            <p data-height="147" data-theme-id="0" data-slug-hash="bwzgaZ" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/bwzgaZ/">textarea placeholder</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <h3>select</h3>
+            <p>
+                Тег <b>select</b> &mdash; раскрывающийся список или <b>селект</b> (select - выбор) работает в связке с тегами <b>option</b> и служит для создания выпадающих списков для выбора. Атрибут <b>name</b> необходимо задавать на эелемент <b>select</b>.
+            </p>
+            <p data-height="203" data-theme-id="0" data-slug-hash="zKVqeV" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="Select" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/zKVqeV/">Select</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Когда форма отправляется, будет отправлено значение (атрибут <b>value</b>) выбранного элемента <b>option</b>, если <b>value</b> не задано, будет отправлен текст, заключённый внутри элемента <b>option</b>.
+            </p>
+            <p>
+                Если в элементе <b>option</b> есть атрибут <b>selected</b>, то этот элемент будет изначально выбран.
+            </p>
+            <p data-height="192" data-theme-id="0" data-slug-hash="ZpdWPP" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="Select selected" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/ZpdWPP/">Select selected</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <p>
+                Если есть возможность выбора нескольких элементов, для тега <b>select</b> проставляется атрибут <b>multiple</b>, при этом внешний вид элемента меняется.
+            </p>
+            <p data-height="205" data-theme-id="0" data-slug-hash="YGoqMp" data-default-tab="html,result" data-user="alekskorovin" data-embed-version="2" data-pen-title="Select selected multiple" class="codepen">See the Pen <a href="http://codepen.io/alekskorovin/pen/YGoqMp/">Select selected multiple</a> by Aleksey Korovin (<a href="http://codepen.io/alekskorovin">@alekskorovin</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+            <div class="task">
+                <h3>Задание</h3>
+                <ol>
+                    <li>Скачать на рабочий стол файл <a href="form.html">form.html</a>.</li>
+                    <li>
+                        Открыть его в редакторе кода:
+                        <br />
+                        <img src="images/form.png" alt="Открытый form.html"/>
+                    </li>
+                    <li>
+                        В строке 14 изменить email на свой и сохранить файл.
+                    </li>
+                    <li>
+                        Открыть <b>form.html</b> в браузере, заполнить поля и нажать на кнопку <b>Send</b>.
+                        <br/>
+                        <img src="images/form-filled.png" alt="Заполненная форма"/>
+                    </li>
+                    <li>
+                        Убедится что форма отправлена, прочитав подобное сообщение:
+                        <br />
+                        <img src="images/form-sent.png" alt="Сообщение об отправленном письме"/>
+                    </li>
+                    <li>
+                        Открыть свой почтовый ящик и проверить пришедшее сообщение, в некоторых случаях оно попадает в папку <b>спам</b>:
+                        <br/>
+                        <img src="images/form-email.png" alt="Письмо пришедшее на почту"/>
+                    </li>
+                </ol>
+            </div>
         </section>
 
         <aside id="sidebar">
@@ -132,10 +210,8 @@
 </div>
 
 <script src="javascripts/highlight/highlight.pack.js"></script>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="javascripts/main.js"></script>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 <script src="javascripts/jquery.js"></script>
 <script src="javascripts/jquery.scrollNav.min.js"></script>
 <script>
